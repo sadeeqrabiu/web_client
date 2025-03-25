@@ -1,239 +1,142 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const ProductSections = () => {
+const CareersPage = () => {
   return (
-    <div className="w-full px-4 sm:px-8 py-16 bg-white">
-      {/* Header */}
-      {/* <div className="mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Explore our product suite and discover our vision for web3
-        </h2>
-        <div className="flex justify-end">
-          <Link 
-            href="/products" 
-            className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-          >
-            All Products
-          </Link>
-        </div>
-      </div> */}
-      <div className="mb-12">
-         <div className="flex items-center justify-between">
-            <h2 className="text-3xl sm:text-4xl text-black font-bold">
-                Explore our product suite and <br /> discover our vision for web3
-            </h2>
-            <Link
-              href="/products"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-              >
-              All Products
-            </Link>
-          </div>
-       </div>
-
-
-      {/* RE Product Section */}
-      <div className="mb-20">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-          
-        <div className="relative w-full lg:w-1/2">
-            {/* SVG as background */}
-            <img
-              src="/images/reframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
-            />
-            {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-2">
-                  <span className="text-3xl font-extrabold ml-7">RE</span>
-                </div>
-              </div>
-              <p className="text-gray-700 mb-6 text-left text-2xl ml-7">
-                A cutting-edge DEX protocol enabling seamless cross-chain and multi-chain
-                trading across 10+ blockchains. The platform offers advanced DeFi features,
-                including insurance, trading tools, analytics, and IBC, all powered by AI
-                Agents.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-100 mb-6 ml-7">
-                <div>
-                  <p className="text-sm text-black">USERS</p>
-                  <p className="text-2xl text-black font-bold">50K+</p>
-                </div>
-                <div >
-                  <p className="text-sm text-black">MONTHLY TRANSACTIONS</p>
-                  <p className="text-2xl text-black font-bold">$100K+</p>
-                </div>
-              </div>
-              <Link
-                href="/connect"
-                className="inline-block w-40 ml-7 bg-blue-100 text-blue-800 px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
-              >
-                Connect Wallet
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-full lg:w-1/2">
-            <Image
-              src="/images/re.png"
-              alt="RE Product"
-              width={600}
-              height={400}
-              className="rounded-lg w-full h-auto"
-            />
+    <div className="w-full px-4 sm:px-8 py-0 bg-white">
+      {/* Hero Section */}
+      <div className="relative w-full h-[400px] overflow-hidden">
+        <Image
+          src="/images/career-bg.png"
+          alt="Careers at Roll Protocol"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 flex flex-col justify-center p-8">
+          <div className="max-w-xl">
+            <h1 className="text-white text-5xl font-bold mb-4">
+              Be part of<br />
+              the protocol team
+            </h1>
           </div>
         </div>
       </div>
+      
+      {/* Mission Statement */}
+      <div className="bg-transparent p-8 rounded-br-3xl">
+        <p className="text-black max-w-3xl ml-auto">
+          We are a team of visionary builders, engineers, and researchers 
+          dedicated to shaping a decentralized, secure, and scalable future 
+          for the internet.
+        </p>
+      </div>
+      
+      {/* Work Culture Sections */}
+      <div className="py-16 px-8 bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-8">
+        {/* Left Side - How We Work */}
+        <div className="flex flex-col">
+          <h2 className="text-red-500 text-lg font-extrabold mb-4">How We Work</h2>
+          <h3 className="text-4xl text-black font-extrabold mb-6">Remote First</h3>
+          <p className="mb-6 text-black">
+            We believe talent has no borders. Our team thrives in a remote-
+            first culture, staying connected through co-working 
+            opportunities, global meetups, and innovative collaboration. 
+            We foster a dynamic environment where creativity, teamwork, 
+            and innovation drive meaningful impact—no matter where you 
+            are.
+          </p>
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-md">
+            Explore
+          </button>
+        </div>
 
-      {/* RA Product Section */}
-      <div className="mb-20">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-          
-        <div className="relative w-full lg:w-1/2">
-            {/* SVG as background */}
-            <img
-              src="/images/raframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
+        {/* Right Side - Work Culture Sections */}
+        <div className="flex flex-col space-y-6">
+          {/* Focus on Breakthrough Advancements */}
+          <div className="relative w-full max-w-lg">
+            {/* Background Image */}
+            <Image
+                src="/images/focus.svg"  // Update with your actual path
+                alt="Focus on breakthrough advancements"
+                width={616}
+                height={356}
+                className="w-full h-auto"
             />
-            {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-0">
-                  <span className="text-3xl font-extrabold ml-7">RA</span>
-                </div>
-              </div>
-              <p className="text-gray-700 mb-6 ml-7 text-2xl">
-                RA is an advanced AI Agents solution developed by Roll Protocol, 
-                designed to provide market intelligence, predictive analytics, 
-                sentiment analysis, high frequency trading, insights and more.
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 py-8">
+                <h3 className="text-black text-2xl md:text-3xl font-bold mb-4">
+                Focus on breakthrough advancements.
+                </h3>
+                <p className="text-black text-base md:text-lg">
+                We tackle complex, high-impact challenges—rethinking what’s possible
+                and pushing beyond convention. With bold ideas and relentless
+                execution, we create transformative solutions that accelerate the shift
+                toward a decentralized future.
+                </p>
+            </div>
+            </div>
+
+          {/* This is a Collective Effort */}
+          <div className="relative w-full max-w-lg">
+            {/* Background Image */}
+            <Image
+                src="/images/effort.svg"  // Update with your actual path
+                alt="Focus on breakthrough advancements"
+                width={616}
+                height={356}
+                className="w-full h-auto"
+            />
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 py-8">
+                <h3 className="text-black text-2xl md:text-3xl font-bold mb-4">
+                This is a collective effort.
+                </h3>
+                <p className="text-black text-base md:text-lg">
+                The future of the internet depends on collaborative efforts. We 
+                recognize that everyone has a role to play in its development, 
+                and by working together, we can achieve significant 
+                advancements, overcome challenges, and create a better 
+                online experience for all.
               </p>
-              <div className="flex flex-col sm:flex-row gap-8 mb-6 ml-7">
-                <div>
-                  <p className="text-sm text-black">USERS</p>
-                  <p className="text-2xl text-black font-bold">50K+</p>
-                </div>
                 
-              </div>
-              <Link
-                href="/connect"
-                className="inline-block w-40 bg-blue-500 ml-7 text-black px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
-              >
-                Get Started
-              </Link>
             </div>
-          </div>
+            </div>
 
-          <div className="w-full lg:w-1/2">
+          {/* Act with Honesty and Integrity */}
+          <div className="relative w-full max-w-lg">
+            {/* Background Image */}
             <Image
-              src="/images/ra.png"
-              alt="RA Product"
-              width={600}
-              height={400}
-              className="rounded-lg w-full h-auto"
+                src="/images/act.svg"  // Update with your actual path
+                alt="Focus on breakthrough advancements"
+                width={616}
+                height={356}
+                className="w-full h-auto"
             />
-          </div>
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 py-8">
+                <h3 className="text-black text-2xl md:text-3xl font-bold mb-4">
+                Act with honesty and integrity.
+                </h3>
+                <p className="text-black text-base md:text-lg">
+                Integrity guides our actions. We are committed to transparency 
+                in all our dealings, valuing diverse perspectives to enhance our 
+                understanding. We communicate clearly and honestly, 
+                fostering strong relationships with our team, partners, and the 
+                wider community.
+              </p>
+                
+            </div>
+            </div>
         </div>
       </div>
-
-      {/* R&D Section */}
-      <div className="mb-12">
-        <h2 className="text-3xl sm:text-4xl text-black font-bold mb-8">
-          Research & Development
-        </h2>
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Column - Stacked Cards */}
-          <div className="w-full md:w-1/2 flex flex-col gap-6">
-            {/* MPC Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 rounded-2xl">
-              <img
-                src="/images/cypher.png"
-                alt="Multi-party computation"
-                className="w-full h-[280px] object-cover"
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
-                  Cryptography
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <a 
-                  href="https://medium.com/@rollprotocol/is-multi-party-computation-secure-218763b2fda1" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                  <h3 className="text-white text-3xl font-bold mb-2">
-                    Is multi-party computation secure?
-                  </h3>
-                </a>
-              </div>
-            </div>
-
-            {/* SSI Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 mx-0 rounded-2xl">
-              <img
-                src="/images/identity.png"
-                alt="Self-sovereign identity"
-                className="w-full h-[280px] object-cover"
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
-                  Identity
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-
-                <a 
-                  href="https://medium.com/@rollprotocol/how-self-sovereign-identity-ssi-is-redefining-digital-identity-in-the-age-of-decentralization-53bbd5321640" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                <h3 className="text-white text-3xl font-bold mb-2">
-                  How self-sovereign identity (SSI) is redefining digital identity in the age of decentralization
-                </h3>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Full Height Card */}
-          <div className="w-full md:w-1/2">
-            <div className="relative group cursor-pointer overflow-hidden rounded-2xl h-full">
-              <img
-                src="/images/sustain.png"
-                alt="Sustainable Computing"
-                className="w-full h-full object-cover"
-                style={{ minHeight: '576px' }} 
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-2xl">
-                  Sustain
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <a 
-                  href="https://medium.com/@rollprotocol/harnessing-ai-and-blockchain-for-sustainable-computing-and-reduced-carbon-footprint-9c07a20eab4d" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                <h3 className="text-white text-4xl font-bold mb-2">
-                  Harnessing AI and Blockchain for Sustainable Computing and Reduced Carbon Footprint
-                </h3>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Careers and FooterSection */}
-
+    </div>
+      
+      {/* Turn up your curiosity section and FooterSection */}
       <div className="relative w-full overflow-hidden rounded-4xl "
       style={{
         backgroundImage: "url('/images/cxf.png')", // Update with your PNG path
@@ -252,16 +155,16 @@ const ProductSections = () => {
             backgroundClip: 'text'
           }}
         >
-          Rebuild. Reimagine
+          Turn up your curiosity
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-          Start over.
+        Turn up your 
           <br />
-          Build better.
+          curiosity.
         </h2>
         <p className="mb-8 max-w-md ml-0">
-          The future of the Internet is open, decentralized, 
-          and built for the next generation.
+        Roll Protocol gathers the brightest minds to create infrastructure and tools 
+        for the decentralized future for everyone.
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
           View Careers
@@ -299,7 +202,7 @@ const ProductSections = () => {
             </ul>
             <ul className="space-y-4 font-bold text-2xl">
               <li><a href="/products" className="hover:underline font-bold">Products</a></li>
-              <li><a href="" className="hover:underline font-bold">Platforms &amp; Protocols</a></li>
+              <li><a href="#" className="hover:underline font-bold">Platforms &amp; Protocols</a></li>
               <li><a href="#" className="hover:underline font-bold">Research &amp; Developments</a></li>
               <li><a href="#" className="hover:underline font-bold">Bug Bounty</a></li>
             </ul>
@@ -378,4 +281,4 @@ const ProductSections = () => {
   )
 }
 
-export default ProductSections 
+export default CareersPage 

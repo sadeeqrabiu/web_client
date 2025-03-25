@@ -259,11 +259,11 @@ const ProductsPage = () => {
           {/* Right: Navigation links */}
           <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 ml-50">
             <ul className="space-y-4 ml-50 font-bold text-2xl">
-              <li><a href="#" className="hover:underline font-bold">About</a></li>
+              <li><a href="/about" className="hover:underline font-bold">About</a></li>
               <li><a href="#" className="hover:underline font-bold">Partners</a></li>
               <li><a href="#" className="hover:underline font-bold">News</a></li>
               <li><a href="#" className="hover:underline font-bold">Blog</a></li>
-              <li><a href="#" className="hover:underline font-bold">Careers</a></li>
+              <li><a href="/careers" className="hover:underline font-bold">Careers</a></li>
             </ul>
             <ul className="space-y-4 font-bold text-2xl">
               <li><a href="/products" className="hover:underline font-bold">Products</a></li>
@@ -343,8 +343,6 @@ const ProductsPage = () => {
      
     </div>
     </div>
-
-          
 
     </div>
   )
