@@ -321,8 +321,7 @@ const ProductsPage = () => {
             <input
               type="email"
               placeholder="Signup for free update"
-              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
-            />
+              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300" />
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
               Subscribe
             </button>

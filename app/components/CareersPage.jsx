@@ -120,7 +120,7 @@ const CareersPage = () => {
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center px-6 py-8">
                 <h3 className="text-black text-2xl md:text-3xl font-bold mb-4">
-                Act with honesty and integrity.
+                Act with honesty and <b/> integrity.
                 </h3>
                 <p className="text-black text-base md:text-lg">
                 Integrity guides our actions. We are committed to transparency 
