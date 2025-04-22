@@ -1,249 +1,215 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const ProductSections = () => {
+const ProductsPage = () => {
   return (
-    <div className="w-full px-4 sm:px-8 py-16 bg-white">
-      {/* Header */}
-      {/* <div className="mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Explore our product suite and discover our vision for web3
-        </h2>
-        <div className="flex justify-end">
-          <Link 
-            href="/products" 
-            className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-          >
-            All Products
-          </Link>
-        </div>
-      </div> */}
-      <div className="mb-12">
-         <div className="flex items-center justify-between">
-            <h2 className="text-3xl sm:text-4xl text-black font-bold">
-                Explore our product suite and <br /> discover our vision for web3
-            </h2>
-            <Link
-              href="/products"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
-              >
-              All Products
-            </Link>
-          </div>
-       </div>
+    <div className="w-full px-4 sm:px-8 py-10 bg-white">
+      {/* 1. Background PNG */}
+      <div className="w-full h-auto">
+        {/* Use fixed width/height to preserve the PNG's aspect ratio, 
+            then scale to full width. Adjust as needed. */}
+        <Image
+          src="/images/products.png" // Update with your final path
+          alt="Products background"
+          width={1200}
+          height={600}
+          className="w-full h-auto"
+        />
+      </div>
+
+      {/* 2. Text Overlay */}
+      <div className="absolute top-45 left-0 z-10 
+                      px-6 sm:px-12 md:px-16 lg:px-20 
+                      pt-16 pb-16 text-white max-w-xl">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-27 leading-tight">
+          Our<br />
+          Products
+        </h1>
+        <p className="max-w-lg text-lg mb-16 text-sm">
+          Our products are built for builders, Web3 enthusiasts, and those
+          eager to explore a new internet—one that is more open, secure,
+          and decentralized.
+        </p>
+      </div>
+
 
 
       {/* RE Product Section */}
-      <div className="mb-20">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-          
-        <div className="relative w-full lg:w-1/2">
-            {/* SVG as background */}
-            <img
-              src="/images/reframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
-            />
-            {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-2">
-                  <span className="text-3xl font-extrabold ml-7">RE</span>
+      <div className="relative w-full px-4 sm:px-8 mt-10">
+        <div className="max-w-full mx-auto border border-black rounded-3xl p-8 mb-12">
+          <div className="flex flex-col lg:flex-row gap-8">
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-4xl text-black font-extrabold mb-2">RE</h2>
+              <h3 className="text-2xl mb-6 text-black font-bold">
+                The world's leading decentralized exchange, enhanced by AI Agents.
+              </h3>
+              
+              <div className="mb-6">
+                <h4 className="text-red-500 font-semibold mb-4">Features</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reDefi.svg" alt="DeFi Tools" width={24} height={24} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>DeFi tools and Insurance</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reBlock.svg" alt="Analytics" width={24} height={24} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>Blockchain Analytics</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reAD.svg" alt="Trading Tools" width={24} height={24} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>Advanced Trading Tools</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reInter.svg" alt="IBC" width={35} height={24} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>Inter Blockchain Communication Protocol (IBC)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reMult.svg" alt="Multi-chain" width={28} height={24} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>Multi-chain and Cross chain Support</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/reAI.svg" alt="AI Agents" width={80} height={50} />
+                    </div>
+                    <span className='text-black font-bold text-sm'>AI Agents for predictive analytics, market intelligence, sentiment analysis, high frequency trading and more.</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 mb-6 text-left text-2xl ml-7">
-                A cutting-edge DEX protocol enabling seamless cross-chain and multi-chain
-                trading across 10+ blockchains. The platform offers advanced DeFi features,
-                including insurance, trading tools, analytics, and IBC, all powered by AI
-                Agents.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-100 mb-6 ml-7">
-                <div>
-                  <p className="text-sm text-black">USERS</p>
-                  <p className="text-2xl text-black font-bold">50K+</p>
-                </div>
-                <div >
-                  <p className="text-sm text-black">MONTHLY TRANSACTIONS</p>
-                  <p className="text-2xl text-black font-bold">$100K+</p>
-                </div>
-              </div>
-              <Link
+              
+              <Link 
                 href="/connect"
-                className="inline-block w-40 ml-7 bg-blue-100 text-blue-800 px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
+                className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors"
               >
                 Connect Wallet
               </Link>
             </div>
-          </div>
+            
+            <div className="w-full lg:w-1/2 flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/re-bg.png" 
+                    alt="RE Logo" 
+                    width={300} 
+                    height={300} 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/re-visual.png" 
+                    alt="RE Visual" 
+                    width={300} 
+                    height={300} 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+              <div className="bg-[radial-gradient(circle_at_center,_#698FF3,_#111827)] 
+                    text-white p-24 rounded-lg">
+                  <h3 className="text-3xl font-bold mb-4">
+                  No 1 Exchange Platform
+                </h3>
+              </div>
 
-          <div className="w-full lg:w-1/2">
-            <Image
-              src="/images/re.png"
-              alt="RE Product"
-              width={600}
-              height={400}
-              className="rounded-lg w-full h-auto"
-            />
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* RA Product Section */}
-      <div className="mb-20">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-          
-        <div className="relative w-full lg:w-1/2">
-            {/* SVG as background */}
-            <img
-              src="/images/raframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
-            />
-            {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-0">
-                  <span className="text-3xl font-extrabold ml-7">RA</span>
+        
+        {/* Roll AI Product Section */}
+        <div className="max-w-full mx-auto border border-black rounded-3xl p-8 mb-12">
+          <div className="flex flex-col lg:flex-row gap-10">
+            <div className="w-full lg:w-3xl">
+              <Image 
+                src="/images/rollAI.png" 
+                alt="Roll AI Dashboard" 
+                width={500} 
+                height={400} 
+                className="rounded-lg w-full h-auto"
+              />
+            </div>
+            
+            <div className="w-full text-black lg:w-3/5">
+              <h2 className="text-4xl text-black font-extrabold mb-2">Roll AI</h2>
+              <h3 className="text-xl mb-6 font-bold">
+                AI for Blockchain. Done Right
+              </h3>
+              
+              <div className="mb-6">
+                <h4 className="text-red-500 font-semibold mb-4">Features</h4>
+                <div className="mb-2">
+                  <p className="font-medium font-bold">AI Agents for:</p>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 font-bold">
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/raHigh.svg" alt="HFT" width={24} height={24} />
+                    </div>
+                    <span>High Frequency Trading</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/raMarket.svg" alt="Intelligence" width={24} height={24} />
+                    </div>
+                    <span>Market Intelligence</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/raSen.svg" alt="Sentiment" width={24} height={24} />
+                    </div>
+                    <span>Sentiment Analysis</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/raPre.svg" alt="Predictive" width={24} height={24} />
+                    </div>
+                    <span>Predictive Analytics</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="bg-blue-300 p-2 rounded-lg">
+                      <Image src="/images/raIntel.svg" alt="Assistant" width={24} height={24} />
+                    </div>
+                    <span>Intelligent Trading Assistant</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 mb-6 ml-7 text-2xl">
-                RA is an advanced AI Agents solution developed by Roll Protocol, 
-                designed to provide market intelligence, predictive analytics, 
-                sentiment analysis, high frequency trading, insights and more.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-8 mb-6 ml-7">
-                <div>
-                  <p className="text-sm text-black">USERS</p>
-                  <p className="text-2xl text-black font-bold">50K+</p>
-                </div>
-                
-              </div>
-              <Link
-                href="/connect"
-                className="inline-block w-40 bg-blue-500 ml-7 text-black px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
+              
+              <Link 
+                href="/ra"
+                className="inline-block bg-blue-500 text-black font-bold px-6 py-3 rounded-full hover:bg-blue-600 transition-colors"
               >
-                Get Started
+                Visit RA
               </Link>
             </div>
           </div>
-
-          <div className="w-full lg:w-1/2">
-            <Image
-              src="/images/ra.png"
-              alt="RA Product"
-              width={600}
-              height={400}
-              className="rounded-lg w-full h-auto"
-            />
-          </div>
         </div>
-      </div>
+        
+        {/* Research & Development Section */}
+       
+        {/* Careers and FooterSection */}
 
-      {/* R&D Section */}
-      <div className="mb-12">
-        <h2 className="text-3xl sm:text-4xl text-black font-bold mb-8">
-          Research & Development
-        </h2>
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Column - Stacked Cards */}
-          <div className="w-full md:w-1/2 flex flex-col gap-6">
-            {/* MPC Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 rounded-2xl">
-              <img
-                src="/images/cypher.png"
-                alt="Multi-party computation"
-                className="w-full h-[280px] object-cover"
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
-                  Cryptography
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <a 
-                  href="https://medium.com/@rollprotocol/is-multi-party-computation-secure-218763b2fda1" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                  <h3 className="text-white text-3xl font-bold mb-2">
-                    Is multi-party computation secure?
-                  </h3>
-                </a>
-              </div>
-            </div>
-
-            {/* SSI Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 mx-0 rounded-2xl">
-              <img
-                src="/images/identity.png"
-                alt="Self-sovereign identity"
-                className="w-full h-[280px] object-cover"
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
-                  Identity
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-
-                <a 
-                  href="https://medium.com/@rollprotocol/how-self-sovereign-identity-ssi-is-redefining-digital-identity-in-the-age-of-decentralization-53bbd5321640" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                <h3 className="text-white text-3xl font-bold mb-2">
-                  How self-sovereign identity (SSI) is redefining digital identity in the age of decentralization
-                </h3>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Full Height Card */}
-          <div className="w-full md:w-1/2">
-            <div className="relative group cursor-pointer overflow-hidden rounded-2xl h-full">
-              <img
-                src="/images/sustain.png"
-                alt="Sustainable Computing"
-                className="w-full h-full object-cover"
-                style={{ minHeight: '576px' }} 
-              />
-              <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-2xl">
-                  Sustain
-                </span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <a 
-                  href="https://medium.com/@rollprotocol/harnessing-ai-and-blockchain-for-sustainable-computing-and-reduced-carbon-footprint-9c07a20eab4d" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                >
-                <h3 className="text-white text-4xl font-bold mb-2">
-                  Harnessing AI and Blockchain for Sustainable Computing and Reduced Carbon Footprint
-                </h3>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Careers and FooterSection */}
-
-      <div className="relative w-full overflow-hidden rounded-4xl "
+      <div
+      className="relative w-full overflow-hidden rounded-4xl "
       style={{
         backgroundImage: "url('/images/cxf.png')", // Update with your PNG path
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-      }} >
+      }}
+    >
       {/* =====================
           Top (Careers) Section
          ===================== */}
-      <div className="px-4 sm:px-8 py-16 md:w-1/2 text-white">
+      <div className="px-10 py-16 md:p-16 md:w-1/2 text-white">
         <div 
           className="mb-2 font-bold text-transparent bg-clip-text"
           style={{
@@ -252,26 +218,27 @@ const ProductSections = () => {
             backgroundClip: 'text'
           }}
         >
-          Rebuild. Reimagine
+         Excited for more?
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-          Start over.
-          <br />
-          Build better.
+        Research &<br/>
+        Development
         </h2>
-        <p className="mb-8 max-w-md ml-0">
-          The future of the Internet is open, decentralized, 
-          and built for the next generation.
+        <p className="mb-8 max-w-md ml-0 text-sm">
+        Our research spans cryptography, distributed systems, economics, 
+                programming languages, networking, zero-knowledge proofs, artificial 
+                intelligence, and blockchain scalability—pushing the boundaries of 
+                Web3 innovation.
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
-          View Careers
+        View RD
         </button>
       </div>
 
       {/* =====================
           Bottom (Footer) Section
          ===================== */}
-      <div className="px-4 sm:px-8 pb-16 text-black">
+      <div className="px-10 pb-16 md:px-16 text-black">
         {/* Top Row: Logo & Social */}
         <div className="flex flex-col md:flex-row">
           {/* Left: Logo & social media */}
@@ -285,6 +252,7 @@ const ProductSections = () => {
               <h3 className="font-bold mb-2 text-2xl">
                 Follow us on social media <br /> to stay up to date
               </h3>
+              
             </div>
           </div>
 
@@ -299,7 +267,7 @@ const ProductSections = () => {
             </ul>
             <ul className="space-y-4 font-bold text-2xl">
               <li><a href="/products" className="hover:underline font-bold">Products</a></li>
-              <li><a href="" className="hover:underline font-bold">Platforms &amp; Protocols</a></li>
+              <li><a href="#" className="hover:underline font-bold">Platforms &amp; Protocols</a></li>
               <li><a href="#" className="hover:underline font-bold">Research &amp; Developments</a></li>
               <li><a href="#" className="hover:underline font-bold">Bug Bounty</a></li>
             </ul>
@@ -353,8 +321,7 @@ const ProductSections = () => {
             <input
               type="email"
               placeholder="Signup for free update"
-              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
-            />
+              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300" />
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
               Subscribe
             </button>
@@ -375,7 +342,9 @@ const ProductSections = () => {
      
     </div>
     </div>
+
+    </div>
   )
 }
 
-export default ProductSections 
+export default ProductsPage 

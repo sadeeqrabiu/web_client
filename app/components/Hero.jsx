@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-20 flex items-center justify-between px-4 sm:px-8 py-6">
+      <nav className="fixed bg-white w-full z-20 flex items-center justify-between px-4 sm:px-8 py-6">
         <div className="flex items-center">
           <Image
             src="/images/logo.png"
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex text-black font-bold items-center space-x-8">
+        <div className="hidden lg:flex text-black font-bold text-2xl items-center space-x-8">
           <Link href="/products" className="hover:opacity-80">Products</Link>
           <Link href="/platforms"
            className="hover:opacity-80">Platforms & Protocols</Link>
@@ -44,7 +44,7 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center mt-20 sm:mt-32">
-        <h1 className="mb-4 text-3xl sm:text-4xl text-black font-bold md:text-6xl px-4">
+        <h1 className="mb-4 text-3xl sm:text-4xl text-black font-bold md:text-6xl px-4 mt-20">
           The Internet Is Broken.
         </h1>
         <h2 className="mb-8 text-4xl sm:text-5xl font-bold text-blue-500 md:text-7xl px-4">
