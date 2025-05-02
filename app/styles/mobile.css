@@ -1,0 +1,242 @@
+/* Mobile-First Responsive Styles */
+
+/* Base Mobile Layout (< 640px) */
+@media screen and (max-width: 639px) {
+  /* Hero Section Mobile Styles */
+  .hero-content {
+    padding: 0 24px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    max-width: 280px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 32px;
+    max-width: 280px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    max-width: 335px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .hero-cta-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+    padding: 0 16px;
+  }
+
+  .hero-cta-button {
+    width: auto;
+    min-width: 140px;
+    white-space: nowrap;
+  }
+
+  /* Product Sections Mobile Styles */
+  .products-container {
+    padding: 0 24px;
+  }
+
+  .products-header {
+    margin-bottom: 24px;
+  }
+
+  .products-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .products-all-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* RE Product Card Mobile Styles */
+  .re-card {
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .re-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .re-description {
+    font-size: 16px;
+    max-width: 300px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .re-stats {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  /* RA Product Card Mobile Styles */
+  .ra-card {
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .ra-image {
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  /* Research & Development Mobile Styles */
+  .rd-section {
+    margin-top: 48px;
+  }
+
+  .rd-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .rd-cards {
+    gap: 16px;
+  }
+
+  .rd-card {
+    border-radius: 16px;
+    margin-right: 0;
+  }
+
+  .rd-card-image {
+    height: 200px;
+  }
+
+  /* Footer Mobile Styles */
+  .footer-container {
+    padding: 24px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-social {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-subscribe {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-input {
+    width: 100%;
+  }
+
+  .footer-button {
+    width: 100%;
+  }
+}
+
+/* Small Mobile Devices (< 375px) */
+@media screen and (max-width: 374px) {
+  .hero-title,
+  .hero-subtitle {
+    font-size: 28px;
+    max-width: 250px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    max-width: 300px;
+  }
+
+  .re-description,
+  .ra-description {
+    font-size: 14px;
+    max-width: 270px;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-button {
+    width: 100%;
+  }
+}
+
+/* Landscape Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .hero-content {
+    margin-top: 100px;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    max-width: 400px;
+  }
+
+  .hero-description {
+    max-width: 450px;
+  }
+}
+
+/* Custom utility classes for mobile-specific adjustments */
+.mobile-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mobile-full-width {
+  width: 100%;
+}
+
+.mobile-stack {
+  flex-direction: column;
+}
+
+.mobile-text-left {
+  text-align: left;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-show {
+  display: block;
+}
+
+.mobile-rounded {
+  border-radius: 24px;
+}
+
+.mobile-spacing {
+  margin-bottom: 24px;
+} 

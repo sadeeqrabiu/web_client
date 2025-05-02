@@ -20,8 +20,8 @@ const ProductSections = () => {
       </div> */}
       <div className="mb-12">
          <div className="flex items-center justify-between">
-            <h2 className="text-3xl sm:text-4xl text-black font-bold">
-                Explore our product suite and <br /> discover our vision for web3
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-black font-bold mb-4 sm:mb-2">
+                Explore our product suite and <br className="hidden sm:block" /> discover our vision for web3
             </h2>
             <Link
               href="/products"
@@ -37,46 +37,48 @@ const ProductSections = () => {
       <div className="mb-20">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           
-        <div className="relative w-full lg:w-1/2">
+          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden border " style={{ maxWidth: '100%' }}>
             {/* SVG as background */}
-            <img
-              src="/images/reframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
-            />
+            <div className="aspect-[4/3] sm:aspect-auto mt-7">
+              <img
+                src="/images/reframe.svg"
+                alt="Background SVG"
+                className="w-full h-full object-cover"
+              />
+            </div>
             {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-2">
-                  <span className="text-3xl font-extrabold ml-7">RE</span>
-                </div>
+            <div className="absolute inset-0 flex flex-col justify-center p-7">
+              <div className="mb-4">
+                <span className="text-4xl font-black text-black">RE</span>
               </div>
-              <p className="text-gray-700 mb-6 text-left text-2xl ml-7">
+              <p className="text-gray-700 mb-7 text-left text-base leading-6 max-w-[90%]">
                 A cutting-edge DEX protocol enabling seamless cross-chain and multi-chain
                 trading across 10+ blockchains. The platform offers advanced DeFi features,
                 including insurance, trading tools, analytics, and IBC, all powered by AI
                 Agents.
               </p>
-              <div className="flex flex-col sm:flex-row gap-100 mb-6 ml-7">
+              <div className="flex flex-row justify-between mb-7 pr-6">
                 <div>
-                  <p className="text-sm text-black">USERS</p>
+                  <p className="text-sm uppercase text-black">USERS</p>
                   <p className="text-2xl text-black font-bold">50K+</p>
                 </div>
-                <div >
-                  <p className="text-sm text-black">MONTHLY TRANSACTIONS</p>
+                <div>
+                  <p className="text-sm uppercase text-black">MONTHLY TRANSACTIONS</p>
                   <p className="text-2xl text-black font-bold">$100K+</p>
                 </div>
               </div>
-              <Link
-                href="/connect"
-                className="inline-block w-40 ml-7 bg-blue-100 text-blue-800 px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
-              >
-                Connect Wallet
-              </Link>
+              <div>
+                <Link
+                  href="/connect"
+                  className="inline-block bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition-colors text-sm font-medium"
+                >
+                  Connect Wallet
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 mt-16 lg:mt-0">
             <Image
               src="/images/re.png"
               alt="RE Product"
@@ -92,42 +94,43 @@ const ProductSections = () => {
       <div className="mb-20">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           
-        <div className="relative w-full lg:w-1/2">
+          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden border " style={{ maxWidth: '100%' }}>
             {/* SVG as background */}
-            <img
-              src="/images/raframe.svg"
-              alt="Background SVG"
-              className="w-full h-full object-cover"
-            />
+            <div className="aspect-[4/3] sm:aspect-auto mt-7">
+              <img
+                src="/images/raframe.svg"
+                alt="Background SVG"
+                className="w-full h-full object-cover"
+              />
+            </div>
             {/* Overlay container */}
-            <div className="absolute inset-0 flex flex-col justify-center items-left p-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="text-black rounded-full p-0">
-                  <span className="text-3xl font-extrabold ml-7">RA</span>
-                </div>
+            <div className="absolute inset-0 flex flex-col justify-center p-7">
+              <div className="mb-4">
+                <span className="text-4xl font-black text-black">RA</span>
               </div>
-              <p className="text-gray-700 mb-6 ml-7 text-2xl">
+              <p className="text-gray-700 mb-7 text-left text-base leading-6 max-w-[90%]">
                 RA is an advanced AI Agents solution developed by Roll Protocol, 
                 designed to provide market intelligence, predictive analytics, 
                 sentiment analysis, high frequency trading, insights and more.
               </p>
-              <div className="flex flex-col sm:flex-row gap-8 mb-6 ml-7">
+              <div className="flex flex-row justify-between mb-7 pr-6">
                 <div>
-                  <p className="text-sm text-black">USERS</p>
+                  <p className="text-sm uppercase text-black">USERS</p>
                   <p className="text-2xl text-black font-bold">50K+</p>
                 </div>
-                
               </div>
-              <Link
-                href="/connect"
-                className="inline-block w-40 bg-blue-500 ml-7 text-black px-6 py-2 rounded-full hover:bg-blue-200 transition-colors"
-              >
-                Get Started
-              </Link>
+              <div>
+                <Link
+                  href="/connect"
+                  className="inline-block bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition-colors text-sm font-medium"
+                >
+                  Get Started
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 mt-16 lg:mt-0">
             <Image
               src="/images/ra.png"
               alt="RA Product"
@@ -148,25 +151,27 @@ const ProductSections = () => {
           {/* Left Column - Stacked Cards */}
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             {/* MPC Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 rounded-2xl">
-              <img
-                src="/images/cypher.png"
-                alt="Multi-party computation"
-                className="w-full h-[280px] object-cover"
-              />
+            <div className="relative group cursor-pointer overflow-hidden rounded-2xl md:mr-40">
+              <div className="aspect-[16/9] w-full">
+                <img
+                  src="/images/cypher.png"
+                  alt="Multi-party computation"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="absolute top-4 right-4">
                 <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
                   Cryptography
                 </span>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent">
                 <a 
                   href="https://medium.com/@rollprotocol/is-multi-party-computation-secure-218763b2fda1" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                  <h3 className="text-white text-3xl font-bold mb-2">
+                  <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                     Is multi-party computation secure?
                   </h3>
                 </a>
@@ -174,26 +179,27 @@ const ProductSections = () => {
             </div>
 
             {/* SSI Card */}
-            <div className="relative group cursor-pointer overflow-hidden mr-40 mx-0 rounded-2xl">
-              <img
-                src="/images/identity.png"
-                alt="Self-sovereign identity"
-                className="w-full h-[280px] object-cover"
-              />
+            <div className="relative group cursor-pointer overflow-hidden rounded-2xl md:mr-40">
+              <div className="aspect-[16/9] w-full">
+                <img
+                  src="/images/identity.png"
+                  alt="Self-sovereign identity"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="absolute top-4 right-4">
                 <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
                   Identity
                 </span>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent">
                 <a 
                   href="https://medium.com/@rollprotocol/how-self-sovereign-identity-ssi-is-redefining-digital-identity-in-the-age-of-decentralization-53bbd5321640" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                <h3 className="text-white text-3xl font-bold mb-2">
+                <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                   How self-sovereign identity (SSI) is redefining digital identity in the age of decentralization
                 </h3>
                 </a>
@@ -202,27 +208,28 @@ const ProductSections = () => {
           </div>
 
           {/* Right Column - Full Height Card */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 mt-6 md:mt-0">
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl h-full">
-              <img
-                src="/images/sustain.png"
-                alt="Sustainable Computing"
-                className="w-full h-full object-cover"
-                style={{ minHeight: '576px' }} 
-              />
+              <div className="aspect-[9/16] md:aspect-auto w-full">
+                <img
+                  src="/images/sustain.png"
+                  alt="Sustainable Computing"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="absolute top-4 right-4">
                 <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-2xl">
                   Sustain
                 </span>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent">
                 <a 
                   href="https://medium.com/@rollprotocol/harnessing-ai-and-blockchain-for-sustainable-computing-and-reduced-carbon-footprint-9c07a20eab4d" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                <h3 className="text-white text-4xl font-bold mb-2">
+                <h3 className="text-white text-xl sm:text-2xl md:text-4xl font-bold mb-2">
                   Harnessing AI and Blockchain for Sustainable Computing and Reduced Carbon Footprint
                 </h3>
                 </a>
@@ -234,7 +241,8 @@ const ProductSections = () => {
 
       {/* Careers and FooterSection */}
 
-      <div className="relative w-full overflow-hidden rounded-4xl "
+      {/* Desktop version */}
+      <div className="hidden sm:block relative w-full overflow-hidden rounded-4xl"
       style={{
         backgroundImage: "url('/images/cxf.png')", // Update with your PNG path
         backgroundSize: 'cover',
@@ -290,7 +298,7 @@ const ProductSections = () => {
 
           {/* Right: Navigation links */}
           <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 ml-50">
-            <ul className="space-y-4 ml-50 font-bold text-2xl">
+            <ul className="space-y-4 ml-50 font-bold text-2xl text-black">
               <li><a href="/about" className="hover:underline font-bold">About</a></li>
               <li><a href="#" className="hover:underline font-bold">Partners</a></li>
               <li><a href="#" className="hover:underline font-bold">News</a></li>
@@ -373,6 +381,105 @@ const ProductSections = () => {
         </div>
       </div>
      
+    </div>
+
+    {/* Mobile version */}
+    <div className="sm:hidden flex flex-col">
+      {/* Careers card (dark card) */}
+      <div className="bg-black rounded-xl text-white p-6 mb-6">
+        <div className="mb-2 text-sm text-pink-500 font-medium">
+          Rebuild. Reimagine
+        </div>
+        <h2 className="text-2xl font-bold mb-3">
+          Start over.
+          <br />
+          Build better.
+        </h2>
+        <p className="text-sm mb-6">
+          The future of the Internet is open, decentralized, 
+          and built for the next generation.
+        </p>
+        <button className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md">
+          View Careers
+        </button>
+      </div>
+
+      {/* Footer card (blue card) */}
+      <div className="bg-blue-100 rounded-xl p-6">
+        <h3 className="font-bold mb-4 text-lg">
+          Follow us on social media<br />to stay up to date
+        </h3>
+        
+        {/* Social icons */}
+        <div className="flex gap-4 mb-8">
+          <a href="#" className="text-black" aria-label="Facebook">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://www.github.com/rollprotocol" className="text-black" aria-label="GitHub">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+          <a href="mailto:info@rollprotocol.com" className="text-black" aria-label="Email">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+          <a href="https://t.me/roll_protocol" className="text-black" aria-label="Telegram">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.325.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.041-.105-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+          </a>
+          <a href="#" className="text-black" aria-label="Twitter">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rollprotocol" className="text-black" aria-label="LinkedIn">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+        
+        {/* Navigation - 2 column grid */}
+        <div className="grid grid-cols-2 gap-y-4 gap-x-6 mb-8 text-sm">
+          <a href="/about" className="font-medium">About</a>
+          <a href="/products" className="font-medium">Products</a>
+          <a href="#" className="font-medium">Partners</a>
+          <a href="#" className="font-medium">Platforms & Protocols</a>
+          <a href="#" className="font-medium">News</a>
+          <a href="#" className="font-medium">Research & Developments</a>
+          <a href="#" className="font-medium">Blog</a>
+          <a href="#" className="font-medium">Bug Bounty</a>
+          <a href="/careers" className="font-medium">Careers</a>
+        </div>
+        
+        {/* Signup form */}
+        <div className="mb-8">
+          <div className="flex w-full">
+            <input
+              type="email"
+              placeholder="Signup for free updates"
+              className="px-4 py-2 rounded-l-md w-full focus:outline-none border border-gray-300 text-sm"
+            />
+            <button className="bg-blue-600 hover:bg-blue-700 text-black px-4 py-2 rounded-r-md whitespace-nowrap text-sm">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        
+        {/* Legal */}
+        <div className="flex justify-between text-xs text-black pt-4 border-t border-gray-200">
+          <a href="#" className="hover:underline">Privacy Policy</a>
+          <a href="#" className="hover:underline">Terms of Conditions</a>
+        </div>
+        <div className="text-xs text-black mt-4">
+          © 2023 Roll Protocol. All Rights Reserved.
+        </div>
+      </div>
     </div>
     </div>
   )
