@@ -11,6 +11,8 @@ const Hero = () => {
           src="/images/hero-bg.png"
           alt="Hero background"
           fill
+          sizes="100vw"
+          quality={100}
           className="object-cover"
           priority
         />
@@ -24,7 +26,8 @@ const Hero = () => {
             alt="Roll Protocol"
             width={150}
             height={50}
-            className="cursor-pointer w-auto h-auto sm:w-[180px] md:w-[200px]"
+            className="cursor-pointer w-auto h-8 sm:h-auto sm:w-[180px] md:w-[200px]"
+            priority
           />
         </div>
         
