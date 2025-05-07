@@ -47,16 +47,29 @@ export default function MobileMenu() {
             </svg>
           </button>
         </div>
-        <div className="flex flex-col space-y-8 mt-8">
-          <Link href="/products" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">Products</Link>
-          <Link href="/platforms" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">Platforms & Protocols</Link>
-          <Link href="/rd" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">Research and Development</Link>
-          <Link href="/careers" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">Careers</Link>
-          <Link href="/about" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">About</Link>
-          <Link href="/blog" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">Blog</Link>
-          <Link href="/press" className="font-bold text-xl sm:text-2xl leading-relaxed hover:opacity-80">News</Link>
+        <div className="flex flex-col space-y-8 mt-15 overflow-y-auto">
+          <Link href="/products" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Products</Link>
+          <Link href="/platforms" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Platforms & Protocols</Link>
+          <Link href="/rd" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Research and Development</Link>
+          <Link href="/careers" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Careers</Link>
+          <Link href="/about" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">About</Link>
+          <Link href="/blog" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Blog</Link>
+          <Link href="/press" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">News</Link>
           <Link href="/privacy" className="text-xl sm:text-2xl leading-relaxed hover:opacity-80">Privacy Policy</Link>
-          <Link href="/terms" className="text-xl sm:text-2xl leading-relaxed hover:opacity-80">Terms of Service</Link>
+          <Link href="/terms" className=" text-xl sm:text-2xl leading-relaxed hover:opacity-80">Terms of Service</Link>
+          
+          <div className="border-t border-blue-600">
+            <div className="flex items-center rounded-md overflow-hidden bg-blue-100 mt-4">
+              <input 
+                type="email" 
+                placeholder="Signup for free update" 
+                className="flex-grow px-4 py-3 bg-blue-100 text-gray-800 outline-none" 
+              />
+              <button className="bg-blue-600 text-white px-8 py-3 font-medium">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

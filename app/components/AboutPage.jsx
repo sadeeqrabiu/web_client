@@ -9,93 +9,137 @@ const AboutPage = () => {
         {/* Hero Section with About Roll Protocol */}
         <div className="relative w-full h-auto mb-0">
           <Image
-            src="/images/about-bg.png" // Update with your final path
+            src="/images/about-bg.png"
             alt="About hero background"
             width={1200}
             height={600}
             className="w-full h-auto"
           />
 
-          {/* Text Overlay */}
-          <div className="absolute inset-0 flex items-start justify-start">
+          {/* Text Overlay - Desktop */}
+          <div className="absolute inset-0 hidden sm:flex items-start justify-start">
             {/* Adjust these paddings to perfectly fit the black shape in your PNG */}
             <div className="pt-16 pl-10 text-white">
-              <h1 className="text-5xl bg-black font-bold mb-2 leading-tight">About</h1>
+              <h1 className="text-3xl bg-black font-bold mb-2 leading-tight">About</h1>
               <h2 className="text-5xl bg-black font-bold leading-tight">Roll Protocol</h2>
+            </div>
+          </div>
+          
+          {/* Text Overlay - Mobile */}
+          <div className="absolute bottom-0 left-0 sm:hidden">
+            <div className="bg-black p-4">
+              <h1 className="text-3xl text-white font-bold mb-1 leading-tight">About</h1>
+              <h2 className="text-4xl text-white font-bold leading-tight">Roll Protocol</h2>
             </div>
           </div>
         </div>
         
         {/* Mission Statement */}
         <div className="max-w-4x mt-0 mb-0 py-4">
-          <p className="text-black text-lg">
-            See how we're challenging the status quo of the internet to create a truly <br/> 
+          <p className="text-black text-lg sm:text-lg text-sm px-4 sm:px-0">
+            See how we're challenging the status quo of the internet to create a truly 
+            <span className="hidden sm:inline"><br/></span> 
             decentralized future for the next generation.
           </p>
         </div>
         
         {/* Creating new viewpoints section */}
         <div className="relative w-full">
-        {/* 1. Background Image (Glitch PNG) */}
-        <div className="relative w-full h-auto">
-          <Image
-            src="/images/about-team.png" // Update with your final path
-            alt="Team glitch background"
-            width={1200}
-            height={600}
-            className="w-full h-auto"
-          />
-        </div>
+          {/* Background Image (Glitch PNG) - Hidden on mobile */}
+          <div className="relative w-full h-auto hidden sm:block">
+            <Image
+              src="/images/about-team.png"
+              alt="Team glitch background"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
+            />
+          </div>
 
-        {/* 2. Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-end px-8 py-12 md:px-16 md:py-16">
-          <div className="max-w-xl text-white">
-            <div className="text-red-500 mb-2">Forging New Perspectives</div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-              Creating new viewpoints.
-            </h2>
+          {/* Mobile background with overlay - Visible only on mobile */}
+          <div className="relative w-full bg-gray-800 sm:hidden rounded-3xl overflow-hidden">
+            <div className="aspect-[3/5] w-full">
+              <Image
+                src="/images/mobileteam-bg.png"
+                alt="Team mobile background"
+                width={375}
+                height={600}
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
             
-            {/* Two columns content layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
-              {/* Left column */}
-              <div>
-                <p className="text-sm">
-                  Web3 is reshaping the internet—
-                  shifting power from centralized 
-                  entities to individuals. At Roll Protocol, 
-                  we are building the infrastructure for 
-                  a decentralized future. By leveraging 
-                  blockchain and AI, we enable 
-                  seamless interoperability, financial 
-                  inclusion, and data ownership, 
-                  redefining how users 
-                  interact with the web.
-                </p>
-              </div>
+            {/* Mobile Text Content */}
+            <div className="absolute inset-0 p-6 pt-65">
+              <div className="text-pink-500 font-medium mb-2">Forging New Perspectives</div>
+              <h2 className="text-3xl font-bold mb-6 text-white">
+                Creating new viewpoints.
+              </h2>
               
-              {/* Right column */}
-              <div>
-                <p className="text-sm">
-                  Our founding team brings deep 
-                  expertise in blockchain, AI, and high-
-                  performance systems, having built 
-                  and scaled industry-leading 
-                  organizations. At Roll Protocol, we 
-                  move from developing across 
-                  research, experimentation, and 
-                  deployment to deliver world-class 
-                  infrastructure. With deep technical 
-                  expertise and a vision for a 
-                  decentralized future, we are creating 
-                  the next generation of Web3 
-                  solutions designed to thrive in an 
-                  evolving digital landscape.
+              <div className="text-white space-y-6">
+                <p>
+                  Web3 is reshaping the internet—shifting power from centralized entities to individuals. At Roll Protocol, we are building the infrastructure for a decentralized, secure, and open digital future. By leveraging blockchain and AI, we enable seamless interoperability, financial inclusion, and data ownership, redefining how users interact with the web.
+                </p>
+                
+                <p>
+                  Our founding team brings deep expertise in blockchain, AI, and high-performance systems, having built and scaled industry-leading organizations. At Roll Protocol, we move fast—executing across research, development, and deployment to deliver world-class infrastructure. With deep technical expertise and a vision for a decentralized future, we are creating the next generation of Web3 solutions designed to thrive in an evolving digital landscape.
                 </p>
               </div>
             </div>
           </div>
+
+          {/* Desktop/Tablet Text Overlay - Hidden on mobile */}
+          <div className="absolute inset-0 flex items-center hidden sm:flex">
+            <div className="w-full flex justify-end pr-12 md:pr-24">
+              <div className="max-w-xl">
+                <div className="text-red-500 mb-2">Forging New Perspectives</div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-white">
+                  Creating new viewpoints.
+                </h2>
+                
+                {/* Two columns content layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
+                  {/* Left column */}
+                  <div>
+                    <p className="text-sm">
+                      Web3 is reshaping the internet—
+                      shifting power from centralized 
+                      entities to individuals. At Roll Protocol, 
+                      we are building the infrastructure for 
+                      a decentralized, secure, and open
+                      digital future. By leveraging 
+                      blockchain and AI, we enable 
+                      seamless interoperability, financial 
+                      inclusion, and data ownership, 
+                      redefining how users 
+                      interact with the web.
+                    </p>
+                  </div>
+                  
+                  {/* Right column */}
+                  <div>
+                    <p className="text-sm">
+                      Our founding team brings deep 
+                      expertise in blockchain, AI, and high-
+                      performance systems, having built 
+                      and scaled industry-leading 
+                      organizations. At Roll Protocol, we 
+                      move fast—executing across 
+                      research, development, and 
+                      deployment to deliver world-class 
+                      infrastructure. With deep technical 
+                      expertise and a vision for a 
+                      decentralized future, we are creating 
+                      the next generation of Web3 
+                      solutions designed to thrive in an 
+                      evolving digital landscape.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
         
         {/* Founder Quote Section */}
         <div className="px-8 py-16">
@@ -331,15 +375,13 @@ const AboutPage = () => {
             </div>
           </div>
 
-          {/* Legal links & copyright - with increased spacing */}
-          <div className="mt-10 pt-6 border-t border-gray-200">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                <a href="#" className="text-sm hover:underline">Privacy Policy</a>
-                <a href="#" className="text-sm hover:underline">Terms of Conditions</a>
-              </div>
-              <span className="text-sm text-gray-600">© 2023 Roll Protocol. All Rights Reserved.</span>
-            </div>
+          {/* Legal */}
+          <div className="flex justify-between text-xs text-black pt-4 border-t border-blue-400">
+            <a href="#" className="hover:underline font-semibold">Privacy Policy</a>
+            <a href="#" className="hover:underline font-semibold">Terms of Conditions</a>
+          </div>
+          <div className="text-xs text-black mt-4 font-semibold">
+            © 2023 Roll Protocol. All Rights Reserved.
           </div>
         </div>
        
@@ -442,24 +484,15 @@ const AboutPage = () => {
           
           {/* Legal */}
           <div className="flex justify-between text-xs text-black pt-4 border-t border-blue-400">
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Terms of Conditions</a>
+            <a href="#" className="hover:underline font-semibold">Privacy Policy</a>
+            <a href="#" className="hover:underline font-semibold">Terms of Conditions</a>
           </div>
-          <div className="text-xs text-black mt-4">
+          <div className="text-xs text-black mt-4 font-semibold">
             © 2023 Roll Protocol. All Rights Reserved.
           </div>
         </div>
       </div>
       </div>
-      <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </div>
   )
 }
