@@ -95,7 +95,7 @@ const ProductsPage = () => {
             </div>
           </div>
         </div> */}
-        <div className="max-w-full mx-auto border border-black rounded-3xl p-8 mb-12">
+        <div className="max-w-full mx-auto  rounded-3xl p-8 mb-12">
   <div className="flex flex-col lg:flex-row items-start gap-8">
     {/* Left Column */}
     <div className="w-full lg:w-1/2 space-y-6">
@@ -154,7 +154,7 @@ const ProductsPage = () => {
 </div>
 
         {/* Roll AI Product Section */}
-        <div className="max-w-full mx-auto border border-black rounded-3xl p-8 mb-12">
+        <div className="max-w-full mx-auto  rounded-3xl p-8 mb-12">
           <div className="flex flex-col lg:flex-row gap-10">
             <div className="w-full lg:w-3xl order-2 lg:order-1">
               <Image 

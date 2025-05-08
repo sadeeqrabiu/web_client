@@ -37,7 +37,7 @@ const ProductSections = () => {
       <div className="mb-20">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           
-          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden border " style={{ maxWidth: '100%' }}>
+          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden " style={{ maxWidth: '100%' }}>
             {/* SVG as background */}
             <div className="aspect-[4/3] sm:aspect-auto mt-7">
               <img
@@ -94,7 +94,7 @@ const ProductSections = () => {
       <div className="mb-20">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           
-          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden border " style={{ maxWidth: '100%' }}>
+          <div className="relative w-full lg:w-1/2 mx-auto rounded-[25px] overflow-hidden " style={{ maxWidth: '100%' }}>
             {/* SVG as background */}
             <div className="aspect-[4/3] sm:aspect-auto mt-7">
               <img
