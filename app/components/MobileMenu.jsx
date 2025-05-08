@@ -49,8 +49,8 @@ export default function MobileMenu() {
         </div>
         <div className="flex flex-col space-y-8 mt-15 overflow-y-auto">
           <Link href="/products" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Products</Link>
-          <Link href="/platforms" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Platforms & Protocols</Link>
-          <Link href="/rd" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Research and Development</Link>
+          <a href="#products" onClick={() => setIsOpen(false)} className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Platforms & Protocols</a>
+          <a href="/#rd" onClick={() => setIsOpen(false)} className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Research and Development</a>
           <Link href="/careers" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Careers</Link>
           <Link href="/about" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">About</Link>
           <Link href="/blog" className="font-bold text-3xl sm:text-2xl leading-relaxed hover:opacity-80">Blog</Link>
