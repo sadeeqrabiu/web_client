@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const ProductsPage = () => {
   return (
-    <div className="w-full px-4 sm:px-8 py-10 bg-white">
+    <div id="products" className="w-full px-4 sm:px-8 py-10 bg-white">
       {/* Hero Section */}
       <div className="relative h-[400px] sm:h-[500px] md:h-[600px] bg-cover bg-center" style={{ backgroundImage: 'url("/images/products.png")' }}>
         <div className="absolute inset-0 flex flex-col justify-center">
@@ -212,8 +212,7 @@ const ProductsPage = () => {
               </div>
               
               <Link 
-                href="/ra"
-                className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                href="/ra" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
               >
                 Learn more
               </Link>
@@ -257,9 +256,9 @@ const ProductsPage = () => {
                 intelligence, and blockchain scalability—pushing the boundaries of 
                 Web3 innovation.
         </p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
+        <a href="/#rd" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md inline-block">
         View RD
-        </button>
+        </a>
       </div>
 
       {/* =====================
@@ -294,7 +293,7 @@ const ProductsPage = () => {
             <ul className="space-y-4 font-bold text-2xl">
               <li><a href="/products" className="hover:underline font-bold">Products</a></li>
               <li><a href="" className="hover:underline font-bold">Platforms &amp; Protocols</a></li>
-              <li><a href="#" className="hover:underline font-bold">Research &amp; Developments</a></li>
+              <li><a href="/#rd" className="hover:underline font-bold">Research &amp; Developments</a></li>
               <li><a href="#" className="hover:underline font-bold">Bug Bounty</a></li>
             </ul>
           </div>
@@ -387,9 +386,9 @@ const ProductsPage = () => {
                 intelligence, and blockchain scalability—pushing the boundaries of 
                 Web3 innovation.
         </p>
-        <button className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md">
+        <a href="/#rd" className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md inline-block">
           View RD
-        </button>
+        </a>
       </div>
 
       {/* Footer card (blue card) - Update this to match image */}
@@ -448,7 +447,7 @@ const ProductsPage = () => {
           <a href="#" className="font-medium">Partners</a>
           <a href="#" className="font-medium">Platforms & Protocols</a>
           <a href="#" className="font-medium">News</a>
-          <a href="#" className="font-medium">Research & Developments</a>
+          <a href="/#rd" className="font-medium">Research & Developments</a>
           <a href="#" className="font-medium">Blog</a>
           <a href="#" className="font-medium">Bug Bounty</a>
           <a href="/careers" className="font-medium">Careers</a>

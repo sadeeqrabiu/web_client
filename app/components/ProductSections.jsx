@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const ProductSections = () => {
   return (
-    <div className="w-full px-4 sm:px-8 py-16 bg-white">
+    <div id="products" className="w-full px-4 sm:px-8 py-16 bg-white">
       {/* Header */}
       {/* <div className="mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -143,7 +143,7 @@ const ProductSections = () => {
       </div>
 
       {/* R&D Section */}
-      <div className="mb-12">
+      <div id="rd" className="mb-12">
         <h2 className="text-3xl sm:text-4xl text-black font-bold mb-8">
           Research & Development
         </h2>
@@ -271,9 +271,9 @@ const ProductSections = () => {
           The future of the Internet is open, decentralized, 
           and built for the next generation.
         </p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
-          View Careers
-        </button>
+        <a href="/#rd" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md inline-block">
+          View RD
+        </a>
       </div>
 
       {/* =====================
@@ -399,9 +399,9 @@ const ProductSections = () => {
           The future of the Internet is open, decentralized, 
           and built for the next generation.
         </p>
-        <button className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md">
-          View Careers
-        </button>
+        <a href="/#rd" className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md inline-block">
+          View RD
+        </a>
       </div>
 
       {/* Footer card (blue card) - Update this to match image */}

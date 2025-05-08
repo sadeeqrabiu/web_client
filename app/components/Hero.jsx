@@ -34,9 +34,8 @@ const Hero = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex text-black font-bold text-2xl items-center space-x-8">
           <Link href="/products" className="hover:opacity-80">Products</Link>
-          <Link href="/platforms"
-           className="hover:opacity-80">Platforms & Protocols</Link>
-          <Link href="/rd" className="hover:opacity-80">R&D</Link>
+          <a href="#products" className="hover:opacity-80">Platforms & Protocols</a>
+          <a href="/#rd" className="hover:opacity-80">R&D</a>
           <Link href="/careers" className="hover:opacity-80">Careers</Link>
           <Link href="/about" className="hover:opacity-80">About</Link>
         </div>
