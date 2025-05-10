@@ -26,8 +26,8 @@ const CareersPage = () => {
       {/* Mission Statement */}
       <div className="px-4 sm:px-0 py-4 sm:py-0">
         <p className="text-black text-sm sm:text-base max-w-3xl ml-0 sm:ml-203">
-          We are a team of visionary builders, engineers, and researchers <br className="hidden sm:block"/>
-          dedicated to shaping a decentralized, secure, and scalable future <br className="hidden sm:block"/>
+          We are a team of visionary builders, engineers, and researchers 
+          dedicated to shaping a decentralized, secure, and scalable future
           for the internet.
         </p>
       </div>
@@ -88,7 +88,7 @@ const CareersPage = () => {
 
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center px-6 py-8">
-                <h3 className="text-black text-2xl md:text-3xl font-bold mb-4">
+                <h3 className="text-black text-2xl md:text-3xl font-bold mb-4 xs:text-red-500">
                 Focus on breakthrough advancements.
                 </h3>
                 <p className="text-black text-base md:text-lg">
