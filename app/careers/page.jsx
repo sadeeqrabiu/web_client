@@ -21,7 +21,7 @@ export default function Careers() {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex text-black font-bold text-2xl items-center space-x-8">
+        <div className="hidden lg:flex text-black font-bold text-xl items-center ml-6 space-x-10">
           <Link href="/products" className="hover:opacity-80">Products</Link>
           <a href="#products" className="hover:opacity-80">Platforms & Protocols</a>
           <a href="/#rd" className="hover:opacity-80">R&D</a>
