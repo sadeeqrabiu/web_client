@@ -6,13 +6,16 @@ const ProductSections = () => {
     <div id="products" className="w-full px-4 sm:px-8 py-12 sm:py-16 bg-white">
       {/* Header */}
       <div className="mb-8 sm:mb-12">
-         <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between">
-            <h2 className="text-2xl xs:text-2xl sm:text-3xl md:text-4xl text-black font-bold mb-4 xs:mb-2">
-                Explore our product suite and <br className="hidden sm:block" /> discover our vision for web3
+         <div className="flex flex-row items-center justify-between">
+            <h2 className="text-2xl xs:text-2xl sm:text-3xl md:text-4xl text-black font-bold">
+                <span className="block xs:inline">Explore our product suite</span>{" "}
+                <span className="block xs:inline">and discover our</span>{" "}
+                <span className="block xs:inline">vision for web3</span>
+                <br className="hidden sm:block" />
             </h2>
             <Link
               href="/products"
-              className="bg-blue-500 text-white px-4 xs:px-6 py-2 rounded-full hover:bg-blue-600 transition-colors text-sm sm:text-base"
+              className="bg-blue-500 text-white px-4 xs:px-6 py-2 rounded-full hover:bg-blue-600 transition-colors text-sm sm:text-base ml-4 whitespace-nowrap"
               >
               All Products
             </Link>
@@ -36,28 +39,28 @@ const ProductSections = () => {
             {/* Overlay container */}
             <div className="absolute inset-0 flex flex-col justify-center p-4 xs:p-5 sm:p-7">
               <div className="mb-2 sm:mb-4">
-                <span className="text-3xl sm:text-4xl font-black text-black">RE</span>
+                <span className="text-4xl sm:text-5xl font-black text-black">RE</span>
               </div>
-              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base leading-tight xs:leading-6 max-w-[95%] sm:max-w-[90%]">
-                A cutting-edge DEX protocol enabling seamless cross-chain and multi-chain
-                trading across 10+ blockchains. The platform offers advanced DeFi features,
-                including insurance, trading tools, analytics, and IBC, all powered by AI
-                Agents.
+              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
+                A cutting-edge DEX protocol enabling seamless cross-chain
+                and multi-chain trading across 10+ blockchains. The
+                platform offers advanced DeFi features, including insurance,
+                trading tools, analytics, and IBC, all powered by AI Agents.
               </p>
               <div className="flex flex-row justify-between mb-4 sm:mb-7 pr-4 sm:pr-6">
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black">USERS</p>
-                  <p className="text-lg sm:text-2xl text-black font-bold">50K+</p>
+                  <p className="text-xs sm:text-sm uppercase text-black font-medium">USERS</p>
+                  <p className="text-xl sm:text-3xl text-black font-bold">50K+</p>
                 </div>
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black">MONTHLY TRANSACTIONS</p>
-                  <p className="text-lg sm:text-2xl text-black font-bold">$100K+</p>
+                  <p className="text-xs sm:text-sm uppercase text-black font-medium">MONTHLY TRANSACTIONS</p>
+                  <p className="text-xl sm:text-3xl text-black font-bold">$100K+</p>
                 </div>
               </div>
               <div>
                 <Link
                   href="/connect"
-                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-blue-500 transition-colors text-xs sm:text-sm font-medium"
+                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1.5 sm:py-2.5 rounded-full hover:bg-blue-500 transition-colors text-sm sm:text-base font-medium"
                 >
                   Connect Wallet
                 </Link>
@@ -93,23 +96,23 @@ const ProductSections = () => {
             {/* Overlay container */}
             <div className="absolute inset-0 flex flex-col justify-center p-4 xs:p-5 sm:p-7">
               <div className="mb-2 sm:mb-4">
-                <span className="text-3xl sm:text-4xl font-black text-black">RA</span>
+                <span className="text-4xl sm:text-5xl font-black text-black">RA</span>
               </div>
-              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base leading-tight xs:leading-6 max-w-[95%] sm:max-w-[90%]">
+              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
                 RA is an advanced AI Agents solution developed by Roll Protocol, 
                 designed to provide market intelligence, predictive analytics, 
                 sentiment analysis, high frequency trading, insights and more.
               </p>
               <div className="flex flex-row justify-between mb-4 sm:mb-7 pr-4 sm:pr-6">
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black">USERS</p>
-                  <p className="text-lg sm:text-2xl text-black font-bold">50K+</p>
+                  <p className="text-xs sm:text-sm uppercase text-black font-medium">USERS</p>
+                  <p className="text-xl sm:text-3xl text-black font-bold">50K+</p>
                 </div>
               </div>
               <div>
                 <Link
                   href="/connect"
-                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-blue-500 transition-colors text-xs sm:text-sm font-medium"
+                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1.5 sm:py-2.5 rounded-full hover:bg-blue-500 transition-colors text-sm sm:text-base font-medium"
                 >
                   Get Started
                 </Link>

@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex text-black font-bold text-2xl items-center space-x-8">
+        <div className="hidden lg:flex text-black font-bold text-2xl items-center space-x-10">
           <Link href="/products" className="hover:opacity-80">Products</Link>
           <a href="#products" className="hover:opacity-80">Platforms & Protocols</a>
           <a href="/#rd" className="hover:opacity-80">R&D</a>
@@ -47,13 +47,13 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col justify-center h-screen px-8">
         <div className="flex flex-col items-center">
-          <h1 className="hero-title text-center text-4xl text-black font-bold md:text-6xl mb-0">
+          <h1 className="hero-title text-center text-3xl text-black font-bold md:text-5xl lg:text-6xl mb-0">
             The Internet Is Broken.
           </h1>
-          <h2 className="hero-subtitle text-center text-5xl font-bold text-blue-500 md:text-7xl mt-0">
+          <h2 className="hero-subtitle text-center text-4xl font-extrabold text-blue-500 md:text-6xl lg:text-8xl mt-0">
             We&apos;re Fixing IT.
           </h2>
-          <p className="hero-description text-center max-w-[335px] text-base text-gray-800 mt-6 mb-8 sm:max-w-3xl">
+          <p className="hero-description text-center max-w-[335px] text-sm text-gray-800 mt-6 mb-8 sm:max-w-3xl md:text-lg">
             Today's internet is fragmented, insecure, and controlled by centralized powers. We're building a new paradigm—one where blockchain technology empowers users, secures data, and fosters true decentralization. Join us in shaping the future of the web.
           </p>
           
