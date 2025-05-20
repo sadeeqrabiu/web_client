@@ -21,14 +21,16 @@ const Hero = () => {
       {/* Navigation */}
       <nav className="fixed bg-white w-full z-20 flex items-center justify-between px-4 sm:px-8 py-6">
         <div className="flex items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Roll Protocol"
-            width={150}
-            height={50}
-            className="cursor-pointer w-auto h-8 sm:h-auto sm:w-[180px] md:w-[200px]"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/images/logo3.png"
+              alt="Roll Protocol"
+              width={150}
+              height={50}
+              className="cursor-pointer w-58 h-18 xs:w-40 xs:h-16 sm:w-[180px] sm:h-auto md:w-[200px]"
+              priority
+            />
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
@@ -47,20 +49,20 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col justify-center h-screen px-8">
         <div className="flex flex-col items-center">
-          <h1 className="hero-title text-center text-3xl text-black font-bold md:text-5xl lg:text-6xl mb-0">
+          <h1 className="hero-title hero-title-desktop text-center text-black font-extrabold text-2xl xs:text-3xl mb-2 md:text-5xl lg:text-6xl">
             The Internet Is Broken.
           </h1>
-          <h2 className="hero-subtitle text-center text-4xl font-extrabold text-blue-500 md:text-6xl lg:text-8xl mt-0">
+          <h2 className="hero-subtitle hero-subtitle-desktop text-center font-extrabold text-blue-500 text-5xl xs:text-3xl sm:text-3xl mb-2 md:text-6xl lg:text-8xl mt-0">
             We&apos;re Fixing IT.
           </h2>
-          <p className="hero-description text-center max-w-[335px] text-sm text-gray-800 mt-6 mb-8 sm:max-w-3xl md:text-lg">
-            Today's internet is fragmented, insecure, and controlled by centralized powers. We're building a new paradigm—one where blockchain technology empowers users, secures data, and fosters true decentralization. Join us in shaping the future of the web.
+          <p className="hero-description hero-description-desktop text-center text-gray-800 text-xs xs:text-sm sm:text-base font-medium mt-4 mb-8 sm:max-w-3xl md:text-lg max-w-[335px] mx-auto">
+            Today's internet is fragmented, insecure, and controlled by centralized powers. We&apos;re building a new paradigm—one where blockchain technology empowers users, secures data, and fosters true decentralization. Join us in shaping the future of the web.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex space-x-4">
             <Link 
-              href="/explore"
+              href="/products"
               className="relative rounded-full px-8 py-3 text-white font-bold transition-all text-center"
             >
               <span className="relative z-10">Explore Products</span>
@@ -68,7 +70,7 @@ const Hero = () => {
               <span className="absolute inset-[2px] rounded-full bg-blue-500" />
             </Link>
             <Link 
-              href="/build"
+              href="/products"
               className="relative rounded-full px-8 py-3 text-black font-bold transition-all text-center"
             >
               <span className="relative z-10">Build With Us</span>

@@ -13,11 +13,10 @@ const ProductSections = () => {
                 <span className="block xs:inline">vision for web3</span>
                 <br className="hidden sm:block" />
             </h2>
-            <Link
-              href="/products"
-              className="bg-blue-500 text-white px-4 xs:px-6 py-2 rounded-full hover:bg-blue-600 transition-colors text-sm sm:text-base ml-4 whitespace-nowrap"
-              >
-              All Products
+            <Link href="/products" className="inline-block ml-4">
+              <button className="gradient-border-btn">
+                <span>All Products</span>
+              </button>
             </Link>
           </div>
        </div>
@@ -58,11 +57,10 @@ const ProductSections = () => {
                 </div>
               </div>
               <div>
-                <Link
-                  href="/connect"
-                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1.5 sm:py-2.5 rounded-full hover:bg-blue-500 transition-colors text-sm sm:text-base font-medium"
-                >
-                  Connect Wallet
+                <Link href="/connect" className="inline-block">
+                  <button className="gradient-border-btn">
+                    <span>Connect Wallet</span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -110,11 +108,10 @@ const ProductSections = () => {
                 </div>
               </div>
               <div>
-                <Link
-                  href="/connect"
-                  className="inline-block bg-blue-400 text-white px-4 sm:px-6 py-1.5 sm:py-2.5 rounded-full hover:bg-blue-500 transition-colors text-sm sm:text-base font-medium"
-                >
-                  Get Started
+                <Link href="/connect" className="inline-block">
+                  <button className="gradient-border-btn">
+                    <span>Learn More</span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -261,8 +258,10 @@ const ProductSections = () => {
           The future of the Internet is open, decentralized, 
           and built for the next generation.
         </p>
-        <a href="/#rd" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md inline-block">
-          View RD
+        <a href="/careers" className="inline-block">
+          <button className="gradient-border-btn">
+            <span>View Careers</span>
+          </button>
         </a>
       </div>
 
@@ -351,10 +350,10 @@ const ProductSections = () => {
             <input
               type="email"
               placeholder="Signup for free update"
-              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
+              className="gradient-border-input"
             />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
-              Subscribe
+            <button className="gradient-border-btn-outline ml-15">
+              <span className='mr-25'>Subscribe</span>
             </button>
           </div>
         </div>
@@ -389,8 +388,10 @@ const ProductSections = () => {
           The future of the Internet is open, decentralized, 
           and built for the next generation.
         </p>
-        <a href="/#rd" className="bg-indigo-500 text-white text-xs xs:text-sm px-3 xs:px-4 py-1 xs:py-1.5 rounded-md inline-block">
-          View RD
+        <a href="/#rd" className="inline-block">
+          <button className="gradient-border-btn-mobile">
+            <span>View Careers</span>
+          </button>
         </a>
       </div>
 
@@ -458,15 +459,14 @@ const ProductSections = () => {
               </svg>
             </a>
           </div>
-          
           <div className="flex flex-col space-y-2">
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="px-3 py-2 text-sm rounded-md border border-gray-300 w-full"
+              className="gradient-border-input"
             />
-            <button className="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md">
-              Subscribe
+            <button className="gradient-border-btn mr-10">
+              <span>Subscribe</span>
             </button>
           </div>
         </div>
