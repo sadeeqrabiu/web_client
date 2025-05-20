@@ -277,9 +277,11 @@ const AboutPage = () => {
               and tools needed to power a new internet paradigm—one that is 
               secure, scalable, and truly decentralized for the next generation.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
-            View Careers
+          <a href="/careers" className="inline-block">
+          <button className="gradient-border-btn">
+            <span>View Careers</span>
           </button>
+        </a>
         </div>
 
         {/* =====================
@@ -363,14 +365,14 @@ const AboutPage = () => {
             </div>
 
             {/* Signup form */}
-            <div className="flex w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Signup for free update"
-                className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
+            <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 ">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="gradient-border-input"
               />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
-                Subscribe
+              <button className="gradient-border-btn">
+                <span className="mr-4">Subscribe</span>
               </button>
             </div>
           </div>

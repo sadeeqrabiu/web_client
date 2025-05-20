@@ -25,7 +25,7 @@ const CareersPage = () => {
       
       {/* Mission Statement */}
       <div className="px-4 sm:px-0 py-4 sm:py-0">
-        <p className="text-black text-sm sm:text-base max-w-3xl ml-0 sm:ml-203">
+        <p className="text-black mt-10 text-sm sm:text-base max-w-3xl ml-0 sm:ml-203">
           We are a team of visionary builders, engineers, and researchers 
           dedicated to shaping a decentralized, secure, and scalable future
           for the internet.
@@ -49,7 +49,7 @@ const CareersPage = () => {
                 dynamic environment where creativity, teamwork, and innovation 
                 drive meaningful impact—no matter where you are.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-1.5 rounded-md text-sm">
+              <button className="gradient-border-btn text-white px-4 py-1.5 rounded-md text-sm">
                 Explore
               </button>
             </div>
@@ -67,9 +67,11 @@ const CareersPage = () => {
               and innovation drive meaningful impact—no matter where you 
               are.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-md">
-              Explore
-            </button>
+            <Link href="/about" className="inline-block">
+                  <button className="gradient-border-btn">
+                    <span>Explore</span>
+                  </button>
+                </Link>
           </div>
         </div>
 
@@ -188,9 +190,11 @@ const CareersPage = () => {
         Roll Protocol gathers the brightest minds to create infrastructure and tools 
         for the decentralized future for everyone.
         </p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md">
-          View Careers
-        </button>
+        <a href="/careers" className="inline-block">
+          <button className="gradient-border-btn">
+            <span>View Careers</span>
+          </button>
+        </a>
       </div>
 
 
@@ -275,16 +279,16 @@ const CareersPage = () => {
           </div>
 
           {/* Signup form */}
-          <div className="flex w-full md:w-auto">
-            <input
-              type="email"
-              placeholder="Signup for free update"
-              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
-            />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
-              Subscribe
-            </button>
-          </div>
+          <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 ">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="gradient-border-input"
+              />
+              <button className="gradient-border-btn">
+                <span className="mr-4">Subscribe</span>
+              </button>
+            </div>
         </div>
 
         {/* Legal links & copyright - with increased spacing */}

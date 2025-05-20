@@ -132,12 +132,11 @@ const ProductsPage = () => {
       </div>
 
       {/* Call To Action */}
-      <Link
-        href="/connect"
-        className="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors"
-      >
-        Connect Wallet
-      </Link>
+      <Link href="/connect" className="inline-block">
+                  <button className="gradient-border-btn">
+                    <span>Connect Wallet</span>
+                  </button>
+                </Link>
     </div>
 
     {/* Right Column */}
@@ -211,11 +210,11 @@ const ProductsPage = () => {
                 </div>
               </div>
               
-              <Link 
-                href="/ra" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-              >
-                Learn more
-              </Link>
+              <Link href="/connect" className="inline-block">
+                  <button className="gradient-border-btn">
+                    <span>Learn More</span>
+                  </button>
+                </Link>
             </div>
           </div>
         </div>
@@ -256,8 +255,10 @@ const ProductsPage = () => {
                 intelligence, and blockchain scalability—pushing the boundaries of 
                 Web3 innovation.
         </p>
-        <a href="/#rd" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md inline-block">
-        View RD
+        <a href="/#rd" className="inline-block">
+          <button className="gradient-border-btn">
+            <span>View RD</span>
+          </button>
         </a>
       </div>
 
@@ -346,10 +347,10 @@ const ProductsPage = () => {
             <input
               type="email"
               placeholder="Signup for free update"
-              className="px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none border border-gray-300"
+              className="gradient-border-input"
             />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md whitespace-nowrap">
-              Subscribe
+            <button className="gradient-border-btn-outline ml-15">
+              <span className='mr-25'>Subscribe</span>
             </button>
           </div>
         </div>
