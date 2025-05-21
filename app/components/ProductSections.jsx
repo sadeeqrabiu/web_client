@@ -57,7 +57,7 @@ const ProductSections = () => {
                 </div>
               </div>
               <div>
-                <Link href="/connect" className="inline-block">
+                <Link href="https://www.roll.exchange" className="inline-block">
                   <button className="gradient-border-btn">
                     <span>Connect Wallet</span>
                   </button>
@@ -108,7 +108,7 @@ const ProductSections = () => {
                 </div>
               </div>
               <div>
-                <Link href="/connect" className="inline-block">
+                <Link href="https://www.getrolling.ai" className="inline-block">
                   <button className="gradient-border-btn">
                     <span>Learn More</span>
                   </button>
