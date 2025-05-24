@@ -49,13 +49,13 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col justify-center h-screen px-8">
         <div className="flex flex-col items-center">
-          <h1 className="hero-title hero-title-desktop text-center text-black font-extrabold text-2xl xs:text-3xl mb-2 md:text-5xl lg:text-6xl">
+          <h1 className="hero-title hero-title-desktop text-center text-black font-extrabold text-3xl xs:text-3xl mb-2 md:text-5xl lg:text-6xl">
             The Internet Is Broken.
           </h1>
-          <h2 className="hero-subtitle hero-subtitle-desktop text-center font-extrabold text-blue-500 text-5xl xs:text-3xl sm:text-3xl mb-2 md:text-6xl lg:text-8xl mt-0">
+          <h2 className="hero-subtitle hero-subtitle-desktop text-center font-extrabold text-blue-500 text-6xl xs:text-3xl sm:text-3xl mb-2 md:text-6xl lg:text-8xl mt-0">
             We&apos;re Fixing IT.
           </h2>
-          <p className="hero-description hero-description-desktop text-center text-gray-800 text-xs xs:text-sm sm:text-base font-medium mt-4 mb-8 sm:max-w-3xl md:text-lg max-w-[335px] mx-auto">
+          <p className="hero-description hero-description-desktop text-center text-gray-800 text-1xl xs:text-sm sm:text-base font-medium mt-4 mb-8 sm:max-w-3xl md:text-lg max-w-[335px] mx-auto">
             Today's internet is fragmented, insecure, and controlled by centralized powers. We&apos;re building a new paradigm—one where blockchain technology empowers users, secures data, and fosters true decentralization. Join us in shaping the future of the web.
           </p>
           

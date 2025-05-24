@@ -36,7 +36,7 @@ const AboutPage = () => {
         
         {/* Mission Statement */}
         <div className="max-w-4x mt-0 mb-0 py-4">
-          <p className="text-black text-lg sm:text-lg text-sm px-4 sm:px-0">
+          <p className="text-black text-xl text-justify sm:text-lg text-sm px-4 sm:px-0">
             See how we're challenging the status quo of the internet to create a truly 
             <span className="hidden sm:inline"><br/></span> 
             decentralized future for the next generation.
@@ -70,13 +70,13 @@ const AboutPage = () => {
             </div>
             
             {/* Mobile Text Content */}
-            <div className="absolute inset-0 p-6 pt-65">
-              <div className="text-pink-500 font-medium mb-2">Forging New Perspectives</div>
-              <h2 className="text-3xl font-bold mb-6 text-white">
+            <div className="absolute inset-0 p-6 pt-62">
+              <div className="text-pink-500 font-medium mb-0 text-xl">Forging New Perspectives</div>
+              <h2 className="text-3xl font-bold mb-0 text-white">
                 Creating new viewpoints.
               </h2>
               
-              <div className="text-white space-y-6">
+              <div className="text-white space-y-2 text-lg text-justify">
                 <p>
                   Web3 is reshaping the internet—shifting power from centralized entities to individuals. At Roll Protocol, we are building the infrastructure for a decentralized, secure, and open digital future. By leveraging blockchain and AI, we enable seamless interoperability, financial inclusion, and data ownership, redefining how users interact with the web.
                 </p>
@@ -146,7 +146,7 @@ const AboutPage = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start md:text-left">
             {/* Left quote */}
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
-              <div className="text-red-500 mb-2">Founder Story</div>
+              <div className="text-red-500 mb-2 text-xl">Founder Story</div>
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 "We're not just changing<br/>
                 the game we're building a<br/>
@@ -155,11 +155,10 @@ const AboutPage = () => {
             </div>
             {/* Right text */}
             <div className="w-full md:w-1/2 md:ml-24 mt-4 md:mt-0">
-              <p className="text-sm text-black">
-                At Roll Protocol, we are building a company that aims to<br/>
-                address these problems (and many others) by laying the<br/>
-                foundation for a decentralized web stack suitable for mass<br/>
-                adoption. The drive to unlock everything that web3 enables is<br/>
+              <p className="text-xl text-black text-justify">
+                At Roll Protocol, we are building a company that aims to address these problems (and many others) by laying the
+                foundation for a decentralized web stack suitable for mass
+                adoption. The drive to unlock everything that web3 enables is
                 our north star.
               </p>
             </div>
@@ -168,8 +167,8 @@ const AboutPage = () => {
         
         {/* Team Section */}
         <div className="px-8 py-16 text-black">
-          <h2 className="text-3xl font-bold mb-8">Team</h2>
-          <p className="mb-10">
+          <h2 className="text-5xl font-bold mb-8">Team</h2>
+          <p className="mb-10 text-2xl text-justify">
             With our experienced team, while our advisors are industry leaders who provide strategic guidance and support.
           </p>
           {/* Team members carousel on mobile, grid on md+ */}
@@ -184,12 +183,12 @@ const AboutPage = () => {
                 className="w-full h-auto mb-4 rounded-md"
               />
               <div className="flex justify-between items-center">
-                <h3 className="font-bold">Ibrahim BK</h3>
+                <h3 className="font-bold text-xl">Ibrahim BK</h3>
                 <a href="#" className="text-black">
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={40} height={40} />
                 </a>
               </div>
-              <p className="text-sm">Founder and Co-Creator</p>
+              <p className="text-xl">Founder and Co-Creator</p>
             </div>
             {/* Team member 2 */}
             <div className="min-w-[80vw] max-w-xs md:min-w-0 md:max-w-none mb-8 flex-shrink-0 bg-white rounded-xl shadow md:shadow-none">
@@ -201,12 +200,12 @@ const AboutPage = () => {
                 className="w-full h-auto mb-4 rounded-md"
               />
               <div className="flex justify-between items-center">
-                <h3 className="font-bold">Farid Jibril Farouq</h3>
+                <h3 className="font-bold text-xl">Farid Jibril Farouq</h3>
                 <a href="#" className="text-black">
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={40} height={40} />
                 </a>
               </div>
-              <p className="text-sm">Co-Founder and COO</p>
+              <p className="text-xl">Co-Founder and COO</p>
             </div>
             {/* Team member 3 */}
             <div className="min-w-[80vw] max-w-xs md:min-w-0 md:max-w-none mb-8 flex-shrink-0 bg-white rounded-xl shadow md:shadow-none">
@@ -218,12 +217,12 @@ const AboutPage = () => {
                 className="w-full h-auto mb-4 rounded-md"
               />
               <div className="flex justify-between items-center">
-                <h3 className="font-bold">Sadiq Rabiu</h3>
+                <h3 className="font-bold text-xl">Sadiq Rabiu</h3>
                 <a href="#" className="text-black">
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={40} height={40} />
                 </a>
               </div>
-              <p className="text-sm">Co-Founder and CTO</p>
+              <p className="text-xl">Co-Founder and CTO</p>
             </div>
             {/* Team member 4 */}
             <div className="min-w-[80vw] max-w-xs md:min-w-0 md:max-w-none mb-8 flex-shrink-0 bg-white rounded-xl shadow md:shadow-none">
@@ -235,12 +234,12 @@ const AboutPage = () => {
                 className="w-full h-auto mb-4 rounded-md"
               />
               <div className="flex justify-between items-center">
-                <h3 className="font-bold">Musa Dabra</h3>
+                <h3 className="font-bold text-xl">Musa Dabra</h3>
                 <a href="#" className="text-black">
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={40} height={40} />
                 </a>
               </div>
-              <p className="text-sm">VP of Engineering</p>
+              <p className="text-xl">VP of Engineering</p>
             </div>
           </div>
         </div>  
@@ -393,21 +392,23 @@ const AboutPage = () => {
       <div className="sm:hidden flex flex-col">
         {/* Careers card (dark card) */}
         <div className="bg-black rounded-xl text-white p-6 mb-6">
-          <div className="mb-2 text-sm text-pink-500 font-medium">
+          <div className="mb-2 text-xl text-pink-500 font-medium">
               Fuel Your Curiosity
           </div>
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 className="text-3xl font-bold mb-3">
               Build Without <br/>
               Boundaries
           </h2>
-          <p className="text-sm mb-6">
+          <p className="text-xl mb-6 text-justify">
               We bring together the brightest minds to develop the infrastructure 
               and tools needed to power a new internet paradigm—one that is 
               secure, scalable, and truly decentralized for the next generation.
           </p>
-          <button className="bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md">
-            View Careers
+          <a href="/careers" className="inline-block">
+          <button className="gradient-border-btn-mobile">
+            <span className='text-xl'>View Careers</span>
           </button>
+        </a>
         </div>
 
         {/* Footer card (blue card) - Update this to match image */}
@@ -421,7 +422,7 @@ const AboutPage = () => {
             />
           </div>
           
-          <h3 className="font-bold mb-6 text-lg text-black">
+          <h3 className="font-bold mb-6 text-xl text-black">
             Follow us on social media<br />to stay up to date
           </h3>
           
@@ -460,7 +461,7 @@ const AboutPage = () => {
           </div>
           
           {/* Navigation - 2 column grid */}
-          <div className="grid grid-cols-2 gap-y-5 mb-8">
+          <div className="grid grid-cols-2 gap-y-5 mb-8 text-xl">
             <a href="/about" className="font-medium">About</a>
             <a href="/products" className="font-medium">Products</a>
             <a href="#" className="font-medium">Partners</a>
@@ -477,9 +478,9 @@ const AboutPage = () => {
             <input
               type="email"
               placeholder="Signup for free update"
-              className="px-4 py-3 rounded-md w-full focus:outline-none border border-blue-300 bg-blue-400 text-black placeholder-black mb-2"
+              className="px-4 py-3 rounded-md w-full focus:outline-none border border-blue-300 bg-blue-400 text-black placeholder-black mb-2 text-xl"
             />
-            <button className="w-full bg-transparent border border-pink-500 text-black py-3 rounded-md">
+            <button className="w-full bg-transparent border border-pink-500 text-black py-3 rounded-md text-xl">
               Subscribe
             </button>
           </div>
