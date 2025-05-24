@@ -40,7 +40,7 @@ const ProductSections = () => {
               <div className="mb-2 sm:mb-4">
                 <span className="text-4xl sm:text-5xl font-black text-black">RE</span>
               </div>
-              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
+              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-xl xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
                 A cutting-edge DEX protocol enabling seamless cross-chain
                 and multi-chain trading across 10+ blockchains. The
                 platform offers advanced DeFi features, including insurance,
@@ -48,18 +48,18 @@ const ProductSections = () => {
               </p>
               <div className="flex flex-row justify-between mb-4 sm:mb-7 pr-4 sm:pr-6">
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black font-medium">USERS</p>
-                  <p className="text-xl sm:text-3xl text-black font-bold">50K+</p>
+                  <p className="text-xl sm:text-sm uppercase text-black font-medium">USERS</p>
+                  <p className="text-3xl sm:text-3xl text-black font-bold">50K+</p>
                 </div>
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black font-medium">MONTHLY TRANSACTIONS</p>
-                  <p className="text-xl sm:text-3xl text-black font-bold">$100K+</p>
+                  <p className="text-xl sm:text-sm uppercase text-black font-medium">MONTHLY TRANSACTIONS</p>
+                  <p className="text-3xl sm:text-3xl text-black font-bold">$100K+</p>
                 </div>
               </div>
               <div>
                 <Link href="https://www.roll.exchange" className="inline-block">
                   <button className="gradient-border-btn">
-                    <span>Connect Wallet</span>
+                    <span className='text-xl'>Connect Wallet</span>
                   </button>
                 </Link>
               </div>
@@ -96,21 +96,21 @@ const ProductSections = () => {
               <div className="mb-2 sm:mb-4">
                 <span className="text-4xl sm:text-5xl font-black text-black">RA</span>
               </div>
-              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-sm xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
+              <p className="text-gray-700 mb-4 sm:mb-7 text-left text-xl xs:text-base sm:text-lg leading-tight xs:leading-6 sm:leading-7 max-w-[95%] sm:max-w-[90%]">
                 RA is an advanced AI Agents solution developed by Roll Protocol, 
                 designed to provide market intelligence, predictive analytics, 
                 sentiment analysis, high frequency trading, insights and more.
               </p>
               <div className="flex flex-row justify-between mb-4 sm:mb-7 pr-4 sm:pr-6">
                 <div>
-                  <p className="text-xs sm:text-sm uppercase text-black font-medium">USERS</p>
-                  <p className="text-xl sm:text-3xl text-black font-bold">50K+</p>
+                  <p className="text-xl sm:text-sm uppercase text-black font-medium">USERS</p>
+                  <p className="text-3xl sm:text-3xl text-black font-bold">50K+</p>
                 </div>
               </div>
               <div>
                 <Link href="https://www.getrolling.ai" className="inline-block">
                   <button className="gradient-border-btn">
-                    <span>Learn More</span>
+                    <span className='text-xl'>Learn More</span>
                   </button>
                 </Link>
               </div>
@@ -131,7 +131,7 @@ const ProductSections = () => {
 
       {/* R&D Section */}
       <div id="rd" className="mb-8 sm:mb-12">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl text-black font-bold mb-4 sm:mb-8">
+        <h2 className="text-3xl xs:text-3xl sm:text-4xl text-black font-bold mb-4 sm:mb-8">
           Research & Development
         </h2>
         <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
@@ -147,7 +147,7 @@ const ProductSections = () => {
                 />
               </div>
               <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
+                <span className="bg-white text-xl text-black font-medium px-2 py-1 rounded-full">
                   Cryptography
                 </span>
               </div>
@@ -158,7 +158,7 @@ const ProductSections = () => {
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                  <h3 className="text-white text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+                  <h3 className="text-white text-3xl xs:text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                     Is multi-party computation secure?
                   </h3>
                 </a>
@@ -175,7 +175,7 @@ const ProductSections = () => {
                 />
               </div>
               <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-full">
+                <span className="bg-white text-xl text-black font-medium px-2 py-1 rounded-full">
                   Identity
                 </span>
               </div>
@@ -186,7 +186,7 @@ const ProductSections = () => {
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                  <h3 className="text-white text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+                  <h3 className="text-white text-3xl xs:text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                     How Self-Sovereign Identity (SSI) is redefining digital identity in the age of decentralization
                   </h3>
                 </a>
@@ -205,7 +205,7 @@ const ProductSections = () => {
                 />
               </div>
               <div className="absolute top-4 right-4">
-                <span className="bg-white text-xs text-black font-medium px-2 py-1 rounded-2xl">
+                <span className="bg-white text-xl text-black font-medium px-2 py-1 rounded-2xl">
                   Sustain
                 </span>
               </div>
@@ -216,7 +216,7 @@ const ProductSections = () => {
                   rel="noopener noreferrer" 
                   className="block cursor-pointer"
                 >
-                <h3 className="text-white text-xl sm:text-2xl md:text-4xl font-bold mb-2">
+                <h3 className="text-white text-3xl sm:text-2xl md:text-4xl font-bold mb-2">
                   Harnessing AI and Blockchain for Sustainable Computing and Reduced Carbon Footprint
                 </h3>
                 </a>
@@ -379,18 +379,18 @@ const ProductSections = () => {
         <div className="mb-2 text-xs xs:text-sm text-pink-500 font-medium">
           Rebuild. Reimagine
         </div>
-        <h2 className="text-xl xs:text-2xl font-bold mb-2 xs:mb-3">
+        <h2 className="text-3xl xs:text-2xl font-bold mb-2 xs:mb-3">
           Start over.
           <br />
           Build better.
         </h2>
-        <p className="text-xs xs:text-sm mb-4 xs:mb-6">
+        <p className="text-2xl xs:text-sm mb-4 xs:mb-6">
           The future of the Internet is open, decentralized, 
           and built for the next generation.
         </p>
-        <a href="/#rd" className="inline-block">
+        <a href="/careers" className="inline-block">
           <button className="gradient-border-btn-mobile">
-            <span>View Careers</span>
+            <span className='text-xl'>View Careers</span>
           </button>
         </a>
       </div>
@@ -407,26 +407,16 @@ const ProductSections = () => {
         </div>
 
         {/* Navigation links */}
-        <div className="grid grid-cols-2 gap-2 xs:gap-4 mb-8">
-          <div>
-            <h4 className="text-base xs:text-lg font-bold mb-2 xs:mb-3">Company</h4>
-            <ul className="space-y-2 text-sm xs:text-base">
-              <li><a href="/about" className="hover:underline">About</a></li>
-              <li><a href="#" className="hover:underline">Partners</a></li>
-              <li><a href="#" className="hover:underline">News</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="/careers" className="hover:underline">Careers</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-base xs:text-lg font-bold mb-2 xs:mb-3">Products</h4>
-            <ul className="space-y-2 text-sm xs:text-base">
-              <li><a href="/products" className="hover:underline">Products</a></li>
-              <li><a href="#" className="hover:underline">Platforms &amp; Protocols</a></li>
-              <li><a href="#" className="hover:underline">Research &amp; Developments</a></li>
-              <li><a href="#" className="hover:underline">Bug Bounty</a></li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-2 gap-y-5 mb-8 text-xl">
+          <a href="/about" className="font-medium">About</a>
+          <a href="/products" className="font-medium">Products</a>
+          <a href="#" className="font-medium">Partners</a>
+          <a href="#" className="font-medium">Platforms & Protocols</a>
+          <a href="#" className="font-medium">News</a>
+          <a href="/#rd" className="font-medium">Research & Developments</a>
+          <a href="#" className="font-medium">Blog</a>
+          <a href="#" className="font-medium">Bug Bounty</a>
+          <a href="/careers" className="font-medium">Careers</a>
         </div>
 
         {/* Social icons & Subscribe */}
@@ -459,16 +449,16 @@ const ProductSections = () => {
               </svg>
             </a>
           </div>
-          <div className="flex flex-col space-y-2">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="gradient-border-input"
-            />
-            <button className="gradient-border-btn mr-10">
-              <span>Subscribe</span>
-            </button>
-          </div>
+         <div className="mb-8">
+          <input
+            type="email"
+            placeholder="Signup for free update"
+            className="px-4 py-3 rounded-md w-full focus:outline-none border border-blue-300 bg-blue-400 text-xl text-black placeholder-black mb-2"
+          />
+          <button className="w-full bg-transparent border border-pink-500 text-black text-xl py-3 rounded-md">
+            Subscribe
+          </button>
+        </div>
         </div>
 
         {/* Legal */}

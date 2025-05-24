@@ -15,7 +15,7 @@ export default function Products() {
               alt="Roll Protocol"
               width={150}
               height={50}
-              className="cursor-pointer w-58 h-18 xs:w-40 xs:h-16 sm:w-[180px] sm:h-auto md:w-[200px]"
+              className="cursor-pointer w-80 h-25 xs:w-40 xs:h-16 sm:w-[180px] sm:h-auto md:w-[200px]"
               priority
             />
           </Link>
